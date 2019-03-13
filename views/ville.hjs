@@ -7,8 +7,8 @@
   </head>
   <body>
     <img src="../images/icon.png">
-    <p>Vous habitez à {{ ville }}</p>
-    <p>Votre description de {{ ville }} est : {{ description }}</p>
+    <p style="white-space: pre-wrap;">Vous habitez à {{ ville }}</p>
+    <p style="white-space: pre-wrap;">Votre description de {{ ville }} est : {{ description }}</p> 
 
   </body>
 </html>
