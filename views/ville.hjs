@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="icon" type="image/png" href="../images/icon.png" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <img src="../images/icon.png">
+    <p>Vous habitez à {{ ville }}</p>
+    <p>Votre description de {{ ville }} est : {{ description }}</p>
+
+  </body>
+</html>
