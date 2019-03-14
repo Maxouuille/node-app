@@ -15,9 +15,9 @@ test('Test si index.hjs contient un formulaire', t => {
 });
 
 test('Test si la page ville contient bien la variable ville lors de requetes POST', t => {
-
-	var jsonDataObj = {'ville': 'Paris'};
-	var regex = new RegExp('Paris', 'gmi');
+	var ville = 'Paris'
+	var jsonDataObj = {'ville': ville};
+	var regex = new RegExp(ville, 'gmi');
 	var req = new XMLHttpRequest();
 	req.open("POST", "https://stormy-lake-19285.herokuapp.com/ville", false);
 
