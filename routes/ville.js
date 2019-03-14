@@ -17,6 +17,9 @@ router.post('/', function(req, res, next) {
 	
 	var latt = jsonReq.latt
 	var longt = jsonReq.longt
+	if(latt == '0.00000' && longt == '0.00000'){
+		res.send('Ville inconnus')
+	}
 	//	description = description.replace(/\n/g, "<br>");
   	res.render('ville', { ville: ville, description: description, longt: longt, latt, latt });
 });
